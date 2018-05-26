@@ -1,0 +1,30 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.navbar{
+  padding-top: 15px;	
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.navbar-brand{
+	font: 25px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.navbar-nav a{
+	font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+body{
+	padding-left:25px;
+  padding-right:25px;
+	background-color: #FFFFFF;
+}
+
+

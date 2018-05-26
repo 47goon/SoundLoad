@@ -1,0 +1,25 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">AutoArtist</h1>
+    <p class="lead">My Account</p>
+  </div>
+</div>
+
+ <div class="container">
+  <form action="/upload" id="buldUploadForm"  method="post">
+      <div class="row">
+        <div class="col-sm-6">
+          <small>Logged in as {{name}}</small>
+          <div class="jumbotron" style="background-color: #6e44ff">
+            <h1 class="display-3" style="color: #FFFFFF">Upload your MP3 and Image</h1>
+            <hr class="my-4">
+            <div class="dropzone dz-clickable" id="uploadDropzone">
+               <div class="dz-default dz-message" data-dz-message="">
+                  <span>Drop files here to upload</span>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </form>
+</div>

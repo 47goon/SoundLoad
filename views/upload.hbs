@@ -1,0 +1,79 @@
+<div class="container h-100 justify-content-center align-items-center">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <h2>File Uploader</h2>
+          <div class="dropzone dz-clickable" id="uploadDropzone">
+               <div class="dz-default dz-message" data-dz-message="">
+                  <span>Drop files here to upload</span>
+               </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <form action="/upload" id="buldUploadForm"  method="post">
+      <div class="row">
+        <div class="col-sm-6">
+          <small>Logged in as {{name}}</small>
+          <div class="jumbotron" style="background-color: #6e44ff">
+            <h1 class="display-3" style="color: #FFFFFF">Upload your MP3 and Image</h1>
+            <hr class="my-4">
+            <div class="dropzone dz-clickable" id="uploadDropzone">
+               <div class="dz-default dz-message" data-dz-message="">
+                  <span>Drop files here to upload</span>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Title</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter video title" name="VideoData[title]">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Description</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter video description" name="VideoData[description]">
+          </div>
+          <div class="form-group">
+            <label for="tags">Tags</label>
+            <input data-role="tagsinput" type="text" class="form-control" id="exampleTag1" placeholder="Enter video description" name="VideoData[tags]">
+            <!-- <textarea  class="form-control" rows="5" id="tags" placeholder="Enter video tags"></textarea> -->
+          </div>
+          <div class="form-group">
+            <label for="Fade_In">Options</label><br>
+            Fade In - <input id="Fade_In" type="checkbox" value="Fade_In" name="VideoData[Fade_In]">
+          </div>
+          <input type="submit" class="btn btn-primary col-sm-12" id="submitAllProcess" value="Upload" name="submit"  style="background-color: #ff92c6; color: #FFF;" />
+        </div>
+      </div>
+  </form>
+</div>
+
+
+<!--   <div class="col">
+    <div class="page-header">
+      <h1 class="text-center" style="color: #ff92c6">Upload Info</h1>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Title</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter video title">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Description</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter video description">
+      </div>
+      <div class="form-group">
+        <label for="tags">Tags</label>
+        <textarea class="form-control" rows="5" id="tags" placeholder="Enter video tags"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary col-sm-12" style="background-color: #ff92c6; color: #FFF">Submit</button>
+    </form>
+  </div>
+</div> -->
